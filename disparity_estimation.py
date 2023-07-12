@@ -12,7 +12,6 @@ def encoder(input_channels, output_channels):
         nn.ReLU(inplace=True),
         nn.Upsample(size=(128, 128), mode='bilinear', align_corners=False),
         nn.MaxPool2d(kernel_size=2, stride=2)
-        # Add more convolutional layers as needed
     )
 
 
